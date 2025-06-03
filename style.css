@@ -1,0 +1,286 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+  }
+
+  .wedding {
+    position: relative;
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+  }
+  .vertical-line {
+    position: absolute;
+    top: 130px;
+    bottom: 0;
+    left: 80px;
+    width: 2px;
+    background-color: black;
+  }
+  .horizontal-line {
+    height: 2px;
+    background-color: black;
+  }
+  .date {
+    position: absolute;
+    top: 20px;
+    left: 65px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  .main-content {
+    flex: 1;
+    padding-left: 120px;
+  }
+  .image img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+  }
+  .names {
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 32px;
+    padding: 20px;
+  }
+  .ampersand {
+    font-style: normal;
+  }
+  .content {
+    padding-left: 90px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .welcome {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .top-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  .bottom-left {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .align-left {
+    text-align: left;
+  }
+
+  .invitation {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .invitation__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .invitation__text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .invitation__datetime {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0;
+  }
+  
+  .invitation__photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .invitation__quote {
+    font-family: 'Great Vibes', cursive;
+    font-size: 26px;
+    margin-top: 30px;
+    color: #444;
+  }
+
+  .wedding-info {
+    font-family: 'Cormorant Garamond', serif;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .info-section__header {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .info-section__text {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .info-palette__element {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .info-palette__circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #ccc;
+  }
+
+  .wedding-info__text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    margin: 20px 0;
+  }
+
+  .wedding-info__photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 2px solid #ccc;
+  }
+
+  .info-palette {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+  }
+
+  .info-palette__text {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .person img {
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 40% / 30%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .person__name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    margin-top: 15px;
+  }
+
+  .portraits {
+    margin-top: 50px;
+  }
+
+  .timeline {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: 'Georgia', serif;
+  }
+  
+  .timeline-title {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+  
+  .event {
+    display: flex;
+    margin-bottom: 40px;
+    text-align: justify;
+  }
+  
+  .event-time {
+    width: 120px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1.5;
+  }
+  
+  .event-details {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .event-details h3 {
+    font-style: italic;
+    font-size: 12px;
+    margin:0 0 25px 0;
+  }
+  
+  .event-details p {
+    font-size: 10px;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .conclusion__text {
+    text-align: justify;
+  }
+
+  .conclusion__photo {
+    display: flex;
+  }
+
+  .conclusion__photo img{
+    max-width: 60%;
+  }
+
+  .conclusion__photo--text-inverted {
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    margin: 0;
+  }

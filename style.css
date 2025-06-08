@@ -1,5 +1,9 @@
+@font-face {
+  font-family: 'Darleston';
+  src: url(font/Darleston.otf);
+}
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     margin: 0;
     padding: 0;
     background: #fff;
@@ -23,10 +27,7 @@ body {
     width: 2px;
     background-color: black;
   }
-  .horizontal-line {
-    height: 2px;
-    background-color: black;
-  }
+
   .date {
     position: absolute;
     top: 20px;
@@ -55,7 +56,8 @@ body {
     padding: 20px;
   }
   .ampersand {
-    font-style: normal;
+    font-family: 'Great Vibes', cursive;
+    
   }
   .content {
     padding-left: 90px;
@@ -129,13 +131,12 @@ body {
   
   .invitation__quote {
     font-family: 'Great Vibes', cursive;
-    font-size: 26px;
+    font-size: 20px;
     margin-top: 30px;
     color: #444;
   }
 
   .wedding-info {
-    font-family: 'Cormorant Garamond', serif;
     max-width: 700px;
     display: flex;
     flex-direction: column;
@@ -284,3 +285,124 @@ body {
     writing-mode: vertical-rl;
     margin: 0;
   }
+
+  .calendar {
+    border: 2px solid #333;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  .month {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  .weekdays div {
+    font-weight: bold;
+  }
+  .days div {
+    padding: 8px;
+    font-size: 16px;
+    position: relative;
+  }
+  .ringed {
+    border: 2px solid #d4b17f;
+    border-radius: 50%;
+    color: #000;
+    font-weight: bold;
+  }
+  .ringed::after {
+    content: "💍";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 18px;
+  }
+
+  .info-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .btn-confirm {
+    background-color: #2e2e4f; /* Тёмно-синий/фиолетовый */
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+  }
+
+  .btn-confirm:hover {
+    background-color: #1f1f3a;
+  }
+
+  .checkmark {
+    margin-right: 8px;
+  }
+
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 24px;
+  }
+
+  .timer-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  .number {
+    font-size: 32px;
+  }
+
+  .label {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #555;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  .fade-in-delay-1 { animation-delay: 0.3s; }
+  .fade-in-delay-2 { animation-delay: 0.6s; }
+  .fade-in-delay-3 { animation-delay: 0.9s; }
+  .fade-in-delay-4 { animation-delay: 1.2s; }

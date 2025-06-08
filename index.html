@@ -13,32 +13,57 @@
 <body>
     <div class="container">
         
-      <div class="wedding">
+      <div class="wedding fade-in fade-in-delay-1">
         <div class="vertical-line"></div>
         <div class="date">
           <div>03</div>
           <div>10</div>
           <div>25</div>
         </div>
-        <div class="main-content">
+        <div class="main-content fade-in fade-in-delay-2">
           <div class="image">
             <img src="img/main.JPG" alt="Anton & Ulyana">
           </div>
           <div class="names">
-            <p class="top-right">Антон</p><span class="ampersand">&</span><p class="bottom-left">Ульяна</p>
+            <p class="top-right">Антон</p><span class="ampersand">and</span><p class="bottom-left">Ульяна</p>
           </div>
         </div>
-        <div class="horizontal-line"></div>
-        <div class="content">
+        <div class="content fade-in fade-in-delay-3">
             <p class="align-left">Приглашаем вас разделить с нами радость главного события в нашей жизни!</p>
             <p class="align-left bold">Пятница, 03 октября <span class="bold">2025 года</span></p>
             <p class="align-left italic">Место проведения: загородно-гостиничный комплекс "Royal Park".<br>
             Могилевский район, Дашковский сельсовет, Р-93, 16-й километр</p>
             <div class="align-left welcome">Welcome to our wedding!</div>
+            <div class="timer fade-in fade-in-delay-4" id="countdown">
+              <div class="timer-block">
+                <div class="number" id="weeks">--</div>
+                <div class="label">недель</div>
+              </div>
+              <div class="timer-block">
+                <div class="number" id="days">--</div>
+                <div class="label">дней</div>
+              </div>
+              <div class="timer-block">
+                <div class="number" id="hours">--</div>
+                <div class="label">часов</div>
+              </div>
+              <div class="timer-block">
+                <div class="number" id="minutes">--</div>
+                <div class="label">минут</div>
+              </div>
+              <div class="timer-block">
+                <div class="number" id="seconds">--</div>
+                <div class="label">секунд</div>
+              </div>
+            </div>
           </div>
       </div>
       
-          <div class="invitation">
+
+
+        <section class="wedding-info fade-in fade-in-delay-1">
+
+          <div class="invitation fade-in fade-in-delay-2">
             <h1 class="invitation__title bold">Дорогой<br/>Гость!</h2>
             <p class="invitation__text italic">Мы рады сообщить Вам, что 03.10.2025
                 состоится самое главное торжество в нашей
@@ -46,15 +71,35 @@
                 Приглашаем Вас разделить с нами радость
                 этого незабываемого дня
             </p>
-            <p class="invitation__datetime">03.10.2025 в 15:00</p>
-            <div class="invitation__photo">
+            <div class="invitation__photo fade-in fade-in-delay-3">
               <img src="img/two-slide.JPG"/>
             </div>
-            <p class="invitation__quote">Там, где посеяна любовь, растёт радость.</p>
+            <p class="invitation__quote ade-in fade-in-delay-4">
+              Мы встретились в 2021 году совершенно
+              случайно и с тех пор мы всегда вместе.
+              Наши 4 года полны прекрасных моментов,
+              ошибок и удач, совместных открытий и радостей!
+            </p>
         </div>
 
-        <section class="wedding-info">
-          <div class="info-section">
+          <div class="info-section fade-in fade-in-delay-1">
+            <h2 class="info-section__header">Там, где посеяна любовь, растёт радость</h2>
+            <div class="calendar fade-in fade-in-delay-2">
+              <div class="month">OCTOBER</div>
+              <div class="weekdays">
+                <div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div><div>S</div>
+              </div>
+              <div class="days">
+                <div></div><div></div><div>1</div><div>2</div><div class="ringed">3</div><div>4</div><div>5</div>
+                <div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div>
+                <div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div>
+                <div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div>
+                <div>27</div><div>28</div><div>29</div><div>30</div><div>31</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-section fade-in fade-in-delay-3">
             <h2 class="info-section__header">Меню</h2>
             <p class="info-section__text">
               Меню разнообразно, поэтому сообщите нам
@@ -64,7 +109,7 @@
               предпочтениях и напитках.
             </p>
           </div>
-          <div class="info-section">
+          <div class="info-section fade-in fade-in-delay-3">
             <h2 class="info-section__header">Пожелание по подаркам</h2>
             <p class="info-sections__text">
               Ваше присутствие в день нашей свадьбы - самый
@@ -78,7 +123,7 @@
               алкоголь, сертификат в ваш любимый магазин или в денежном эквиваленте)
             </p>
           </div>
-          <div class="info-section">
+          <div class="info-section fade-in fade-in-delay-3">
             <h2 class="info-section__header">Примечание</h2>
             <p class="info-sections__text">
               Будем благодарны, если вы воздержитесь от криков
@@ -88,15 +133,15 @@
             </p>
           </div>
 
-          <div class="info-section">
+          <div class="info-section fade-in fade-in-delay-3">
             <h2 class="info-section__header">Подтверждение</h2>
             <p class="info-sections__text">
               Пожалуйства подтвердите свое присутствие до
-              01.09.2025
+              <b>14.09.2025</b>
             </p>
           </div>
 
-          <div class="info-section">
+          <div class="info-section fade-in fade-in-delay-3">
             <h2 class="info-section__header">Фото</h2>
             <p class="info-sections__text">
               Опубликуйте фото дня нашей свадьбы в соц. сетях с
@@ -104,45 +149,48 @@
             </p>
           </div>
 
-          <p class="wedding-info__text">Ждем Вас!</p>
+          <p class="wedding-info__text fade-in fade-in-delay-3">Ждем Вас!</p>
 
-          <div class="wedding-info__photo">
+          <div class="wedding-info__photo fade-in fade-in-delay-3">
             <img src="img/flowers.JPG" alt="flowers"/>
           </div>
 
-          <div class="info-palette">
+          <div class="info-palette fade-in fade-in-delay-1">
             <p class="info-palette__text">
-              Будем благодарны, если при выбборе нарядов на наше
+              Будем благодарны, если при выборе нарядов на наше
               торжество вы придержитесь следующей палитры
             </p>
-            <div class="info-palette__element">
+            <div class="info-palette__element fade-in fade-in-delay-2">
               <span class="info-palette__circle" style="background-color: #000000;"></span>
-              <span class="info-palette__circle" style="background-color: #206645;"></span>
-              <span class="info-palette__circle" style="background-color: #fbb8a0;"></span>
-              <span class="info-palette__circle" style="background-color: #c1c1c1;"></span>
-              <span class="info-palette__circle" style="background-color: #f4f4f4;"></span>
+              <span class="info-palette__circle" style="background-color: #306447;"></span>
+              <span class="info-palette__circle" style="background-color: #81633F;"></span>
+              <span class="info-palette__circle" style="background-color: #A3A3A3;"></span>
+              <span class="info-palette__circle" style="background-color: #F9B99E;"></span>
             </div>
           </div>
 
-          <div class="portraits">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdr9cdSs0v_1dt4SH6JzNj1DVwHuDYgULAGPYn2mS1HYkB6ig/viewform?usp=dialog" class="btn-confirm fade-in fade-in-delay-2">
+            <span class="checkmark">✔</span>Подтвердить
+          </a>
+
+          <div class="portraits fade-in fade-in-delay-3">
             <div class="person">
-              <img src="img/main.JPG" alt="anton"/>
-              <p class="person__name">Антон</p>
+              <img src="img/man.JPG" alt="anton"/>
+              <p class="person__name">Жених</p>
             </div>
   
-            <div class="person">
+            <div class="person fade-in fade-in-delay-4">
               <img src="img/girl.JPG" alt="uliyana"/>
-              <p class="person__name">Ульяна</p>
+              <p class="person__name">Невеста</p>
             </div>
           </div>
 
-          <div class="timeline">
+          <div class="timeline fade-in fade-in-delay-1">
             <h2 class="timeline-title">ТАЙМИНГ</h2>
           
-            <div class="event">
+            <div class="event fade-in-delay-1">
               <div class="event-time">
                 <span>15:00</span>
-                <span>03.10.2025</span>
               </div>
               <div class="event-details">
                 <h3>Сбор гостей</h3>
@@ -152,7 +200,7 @@
               </div>
             </div>
           
-            <div class="event">
+            <div class="event fade-in-delay-2">
               <div class="event-time">
                 <span>15:30</span>
               </div>
@@ -164,27 +212,27 @@
               </div>
             </div>
           
-            <div class="event">
+            <div class="event fade-in-delay-3">
               <div class="event-time">
                 <span>23:00</span>
               </div>
               <div class="event-details">
-                <h3>Завершение незабываемого дня</h3>
+                <h3>Завершение свадебного торжества</h3>
               </div>
             </div>
           </div>
 
-          <div class="conclusion">
+          <div class="conclusion fade-in fade-in-delay-4">
             <h1 class="conclusion__header">Дорогие гости!</h2>
             <p class="conclusion__text">Мы с нетерпением ждём нашу свадьбу
-              Хотим как можно скорее обнять каждого из
+              Хотим, как можно скорее обнять каждого из
               Вас и поблагодарить за то, что Вы согласились
               разделить с нами этот трогательный, очень
               важный и особенный день!
               Надеемся, что каждый из Вас будет в
               замечательном настроении, наполненным
               положительными эмоциями, чувствами и
-              лююбовью друг к другу.
+              любовью друг к другу.
               Мы рады, что Вы сможете стать
               свидетелями создания нашей семьи!
             </p>
@@ -196,5 +244,6 @@
 
         </section>
       </div>
+      <script src="script.js"></script>
 </body>
 </html>

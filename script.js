@@ -21,6 +21,27 @@ const countdown = () => {
     document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
     document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
   };
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const ringed = document.querySelector('.ringed');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            ringed.classList.add('visible');
+          } else {
+            ringed.classList.remove('visible');
+          }
+        });
+      },
+      {
+        threshold: 0.5
+      }
+    );
+
+    if (ringed) observer.observe(ringed);
+  });
 
   countdown();
   setInterval(countdown, 1000);
